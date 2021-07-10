@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border: 3px solid #8c8c8c;
+  margin-bottom: 2rem;
+
+  .fieldset {
+    display: flex;
+    padding: 0;
+
+    .search-term {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 1.8rem;
+      border: 1px solid $input-border-color;
+    }
+
+    .search-btn {
+      border: none;
+      font-size: 2rem;
+      background: none;
+    }
+  }
+}

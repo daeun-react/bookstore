@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.book {
+  width: 33%;
+  position: relative;
+  padding-top: 20rem;
+  margin-bottom: 8rem;
+
+  .title {
+    font-size: 1.6rem;
+    width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 12rem;
+      height: 17.4rem;
+      border: 1px solid $input-border-color;
+    }
+  }
+
+  .book-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+
+    div {
+      height: 2.6rem;
+    }
+
+    div:last-child {
+      position: absolute;
+      height: auto;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: $bold;
+
+      &::before {
+        content: $currency;
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}
